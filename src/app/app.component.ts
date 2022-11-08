@@ -10,7 +10,9 @@ export class AppComponent implements OnInit {
 
   documents: Document[];
   
-  constructor(private service:DocumentsService) {}
+  constructor(
+    private service:DocumentsService
+    ) {}
   
   ngOnInit() {
       this.service.getDocuments()

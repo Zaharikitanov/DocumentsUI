@@ -19,6 +19,6 @@ export class DocumentsService {
       map(v => {
         return <Document[]>v;
       })
-    );;
+    );
   }
 }

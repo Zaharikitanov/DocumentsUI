@@ -21,4 +21,14 @@ export class DocumentsService {
       })
     );
   }
+
+  createDocument(document: Document): Observable<object> {
+    return this.httpClient
+      .post(this.apiUrl + `/documents`, document)
+      .pipe(
+        map(v => {
+          return <object>v;
+        })
+      );
+  }
 }

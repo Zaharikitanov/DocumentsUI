@@ -1,16 +1,11 @@
-<h1>All documents list</h1>
-
-<table>
-  <tr>
-    <th>Document name</th>
-    <th>Version</th>
-    <th>File name</th>
-    <th>File size (in bytes)</th>
-  </tr>
-  <tr *ngFor="let document of documents">
-    <td>{{ document.documentName }}</td>
-    <td>{{ document.version }}</td>
-    <td>{{ document.fileName }}</td>
-    <td>{{ document.fileSize }}</td>
-  </tr>
-</table>
+<header>
+  <div id="logo">
+    <a routerLink="/"><h1>Documents</h1></a>
+  </div>
+  <nav>
+    
+  </nav>
+</header>
+<div class="px-4 pt-4">
+  <router-outlet></router-outlet>
+</div>

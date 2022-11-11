@@ -1,0 +1,19 @@
+<div class="d-flex flex-row align-items-center">
+    <h1>All documents</h1>
+    <a class="btn btn-success mx-4" routerLink="/document/create">Create document</a>
+</div>
+
+<table>
+  <tr>
+    <th>Document name</th>
+    <th>Version</th>
+    <th>File name</th>
+    <th>File size (in bytes)</th>
+  </tr>
+  <tr *ngFor="let document of documents">
+    <td>{{ document.documentName }}</td>
+    <td>{{ document.version }}</td>
+    <td>{{ document.fileName }}</td>
+    <td>{{ document.fileSize }}</td>
+  </tr>
+</table>

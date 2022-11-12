@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DocumentsService } from '../../../services/documents.service';
+import { DocumentFile } from '../../Dto/document';
 
 @Component({
   selector: 'app-list',
@@ -8,7 +9,7 @@ import { DocumentsService } from '../../../services/documents.service';
 })
 export class ListComponent implements OnInit {
 
-  documents: Document[];
+  documents: DocumentFile[];
   
   constructor(
     private service: DocumentsService

@@ -1,5 +1,5 @@
-export class Document {
-    id: string;
+export class DocumentFile {
+    id?: string;
     documentName: string;
     version: number;
     fileName: string;

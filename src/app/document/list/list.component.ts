@@ -21,5 +21,4 @@ export class ListComponent implements OnInit {
           this.documents = response;
         });
   }
-
 }
